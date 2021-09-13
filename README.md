@@ -1,5 +1,5 @@
 # QEPPI
-Quantitative Estimate of Protein-Protein Interaction Targeting Druglikeness
+Quantitative Estimate Index for Compounds Targeting Protein-Protein Interactions
 
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
