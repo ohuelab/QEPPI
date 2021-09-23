@@ -10,7 +10,7 @@ If you have a lot of SMILES to calculate, please convert the SMILES to SDF files
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/ohuelab/QEPPI/blob/main/notebook/QEPPI.ipynb)
 
 ## Mininal Environment Setup (Only QEPPI calculation)
-We setup it on a Mac(macOS10.15.7), but I'm sure it will run fine on other platforms such as Linux.  
+We setup it on a Mac (macOS10.15.7), but I'm sure it will run fine on other platforms such as Linux.  
 
 ```
 miniconda3-4.3.30
@@ -53,5 +53,6 @@ result = list(map(q.qeppi, ppi_mols))
 ```
 
 ## Reference
-Kosugi T, Ohue M. **Quantitative estimate of protein-protein interaction targeting drug-likeness**. In _Proceedings of The 18th IEEE International Conference on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB 2021)_. (accepted)
+- Kosugi T, Ohue M. **Quantitative estimate of protein-protein interaction targeting drug-likeness**. In _Proceedings of The 18th IEEE International Conference on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB 2021)_. (accepted)
 ChemRxiv, Preprint. 2021. [doi:10.33774/chemrxiv-2021-psqq4-v2](https://doi.org/10.33774/chemrxiv-2021-psqq4-v2)
+- Kosugi T, Ohue M. **Development of a quantitative estimate index for early-stage screening of compounds targeting protein-protein interactions**. (submitted)
