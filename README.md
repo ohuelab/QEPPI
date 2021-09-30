@@ -1,3 +1,8 @@
+<p align="center">
+<!-- <img src="https://user-images.githubusercontent.com/7370243/135420602-4855c5e2-7000-43cf-a150-b96a680c5f43.png"  width="400px"> -->
+  <img src="https://user-images.githubusercontent.com/7370243/135420088-f616adc8-1e92-4d9b-8b53-0b863497244d.png"  width="400px">
+</p>
+
 # QEPPI
 Quantitative Estimate Index for Compounds Targeting Protein-Protein Interactions
 
