@@ -60,4 +60,4 @@ result = list(map(q.qeppi, ppi_mols))
 ## Reference
 - Kosugi T, Ohue M. **Quantitative estimate of protein-protein interaction targeting drug-likeness**. In _Proceedings of The 18th IEEE International Conference on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB 2021)_. (accepted)
 ChemRxiv, Preprint. 2021. [doi:10.33774/chemrxiv-2021-psqq4-v2](https://doi.org/10.33774/chemrxiv-2021-psqq4-v2)
-- Kosugi T, Ohue M. **Development of a quantitative estimate index for early-stage screening of compounds targeting protein-protein interactions**. (submitted)
+- Kosugi T, Ohue M. **Development of a quantitative estimate index for early-stage screening of compounds targeting protein-protein interactions**. (under revision)
