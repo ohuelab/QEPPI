@@ -1,14 +1,12 @@
 <p align="center">
-<!-- <img src="https://user-images.githubusercontent.com/7370243/135420602-4855c5e2-7000-43cf-a150-b96a680c5f43.png"  width="400px"> -->
   <img src="https://user-images.githubusercontent.com/7370243/135420088-f616adc8-1e92-4d9b-8b53-0b863497244d.png"  width="400px">
 </p>
 
 # QEPPI
 Quantitative Estimate Index for Compounds Targeting Protein-Protein Interactions
 
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fohuelab%2FQEPPI&count_bg=%23D6CCE5&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=QEPPI+Hits&edge_flat=true)
-<!-- ![Watch](https://img.shields.io/github/watchers/ohuelab/QEPPI?logo=github&style=social) -->
+[![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
+![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fohuelab%2FQEPPI&count_bg=%238EC9EE&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Hits&edge_flat=true)
 
 ## Calculation QEPPI with using Google Colab
 We have made it so that you can use Google Colab to calculate QEPPI from SMILES without creating your own environment.   
