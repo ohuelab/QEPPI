@@ -7,7 +7,7 @@ Quantitative Estimate Index for Compounds Targeting Protein-Protein Interactions
 
 [![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fohuelab%2FQEPPI&count_bg=%238EC9EE&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Hits&edge_flat=true)](https://hits.seeyoufarm.com/)
-[![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=<url>?raw=True&logo=github)](https://github.com/MShawon/github-clone-count-badge)
+<!-- [![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=<url>?raw=True&logo=github)](https://github.com/MShawon/github-clone-count-badge) -->
 
 ## Calculation QEPPI with using Google Colab
 We have made it so that you can use Google Colab to calculate QEPPI from SMILES without creating your own environment.   
