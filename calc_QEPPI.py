@@ -1,6 +1,6 @@
 import argparse
 
-import qeppi as ppi
+import QEPPI as ppi
 from rdkit import Chem
 from rdkit.Chem import SDMolSupplier
 import pandas as pd

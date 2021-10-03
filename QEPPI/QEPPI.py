@@ -1,5 +1,5 @@
-from util import ads
-from constant import CHEM_LABELS, DESC_FUNC_DICT
+from .util import ads
+from .constant import CHEM_LABELS, DESC_FUNC_DICT, WEIGHT
 
 import numpy as np
 import pickle
@@ -16,6 +16,9 @@ class QEPPI_Calculator:
         with open(model_path, "rb") as rf:
             model = pickle.load(rf)
         self.model = model
+    
+    def read(self, weight=WEIGHT):
+        self.model = weight
 
     def qeppi(self, mol, method="mo", detail=False):
         if method == "u":
