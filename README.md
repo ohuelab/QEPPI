@@ -18,7 +18,7 @@ If you have a lot of SMILES to calculate, please convert the SMILES to SDF files
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/ohuelab/QEPPI/blob/main/notebook/QEPPI.ipynb)
 
-## Mininal environment setup
+## Mininal environment setup (Git clone)
 We setup it on a Mac (macOS10.15.7), but I'm sure it will run fine on other platforms such as Linux.  
 
 ```bash
@@ -56,7 +56,8 @@ python calc_QEPPI.py --csv PATH_TO_YOUR_COMPOUND.csv --out PATH_TO_OUTPUT.csv
 ```
 
 ## Instalation using pip install
-You can install it with ```pip install QEPPI```. First, you need to install with the dependencies (see [Mininal environment setup](https://github.com/ohuelab/QEPPI#mininal-environment-setup)). The following sample code is available as an implementation example.  
+You can also install QEPPI with ```pip install QEPPI```. The following sample code is available as an implementation example.  
+Note: some dependancies will also be installed with QEPPI module, so a clean environment is preferred!
 ```bash
 # QEPPI
 pip install QEPPI
