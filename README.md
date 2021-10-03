@@ -8,9 +8,9 @@ Quantitative Estimate Index for Compounds Targeting Protein-Protein Interactions
 [![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
 [![GitHub Clones](https://img.shields.io/badge/dynamic/json?style=flat-square?color=success&label=Clones_in_14days&query=count&url=https://github.com/ohuelab/QEPPI/blob/main/clone.json?raw=True&logo=github)](https://github.com/ohuelab/QEPPI/)
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fohuelab%2FQEPPI&count_bg=%238EC9EE&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Hits&edge_flat=true)](https://hits.seeyoufarm.com/)
+![PyPI](https://img.shields.io/pypi/v/QEPPI?style=flat-square)
+[![Python Versions](https://img.shields.io/pypi/pyversions/QEPPI.svg)](https://pypi.org/project/QEPPI/)
 [![tests](https://github.com/ohuelab/QEPPI/actions/workflows/tests.yml/badge.svg)](https://github.com/ohuelab/QEPPI)
-[![PyPI version](https://badge.fury.io/py/QEPPI.svg)](https://badge.fury.io/py/QEPPI)
-
 
 ## Calculation QEPPI with using Google Colab
 We have made it so that you can use Google Colab to calculate QEPPI from SMILES without creating your own environment.   
@@ -22,6 +22,7 @@ If you have a lot of SMILES to calculate, please convert the SMILES to SDF files
 We setup it on a Mac (macOS10.15.7), but I'm sure it will run fine on other platforms such as Linux.  
 
 ```bash
+# Python 3.7 | 3.8
 # dependencies
 pip install rdkit-pypi
 pip install numpy
