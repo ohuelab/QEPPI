@@ -2,7 +2,7 @@ import os
 from glob import glob
 from setuptools import setup
 
-exec(open("qeppi/version.py").read())
+exec(open("QEPPI/version.py").read())
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
