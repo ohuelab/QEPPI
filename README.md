@@ -38,9 +38,7 @@ git clone https://github.com/ohuelab/QEPPI.git
 ```
 
 ### Test
-Test it after git clone the QEPPI repository.  
-If the test passes, the QEPPI calculation has been successfully performed.  
-(We used pytest version is 6.2.2)  
+Test it after git clone the QEPPI repository. If the test passes, the QEPPI calculation has been successfully performed. (We used pytest version is 6.2.2)  
 ```bash
 cd QEPPI
 pytest -v
@@ -57,10 +55,7 @@ python calc_QEPPI.py --csv PATH_TO_YOUR_COMPOUND.csv --out PATH_TO_OUTPUT.csv
 ```
 
 ## Instalation using pip install
-You can install it with ```pip install QEPPI```.  
-First, you need to install with the dependencies (see [Mininal environment setup](https://github.com/ohuelab/QEPPI#mininal-environment-setup)).  
-The following sample code is available as an implementation example.  
-
+You can install it with ```pip install QEPPI```. First, you need to install with the dependencies (see [Mininal environment setup](https://github.com/ohuelab/QEPPI#mininal-environment-setup)). The following sample code is available as an implementation example.  
 ```bash
 # QEPPI
 pip install QEPPI
