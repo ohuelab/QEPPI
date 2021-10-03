@@ -18,43 +18,8 @@ If you have a lot of SMILES to calculate, please convert the SMILES to SDF files
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/ohuelab/QEPPI/blob/main/notebook/QEPPI.ipynb)
 
-## Mininal Environment Setup (Only QEPPI calculation)
+## Mininal environment setup
 We setup it on a Mac (macOS10.15.7), but I'm sure it will run fine on other platforms such as Linux.  
-
-```
-Python>=3.7.9 <=3.8
-rdkit-pypi>=2021.3.1.5
-numpy>=1.19.5
-pandas>=1.1.5
-```
-We also confirmed that QEPPI works with Colab. (see [notebook](https://github.com/ohuelab/QEPPI/blob/main/notebook/QEPPI.ipynb))
-
-## Test
-Test it when you are done with the setup.
-If the test passes, the QEPPI calculation has been successfully performed.
-(We used pytest version is 6.2.2)
-```bash
-pytest -v
-```
-
-## QEPPI calculation example (git clone)
-```bash
-# for .sdf
-git clone https://github.com/ohuelab/QEPPI.git
-cd QEPPI
-python calc_QEPPI.py --sdf PATH_TO_YOUR_COMPOUND.sdf --out PATH_TO_OUTPUT.csv
-```
-```bash
-# for .csv ("A column name of "SMILES" is required.")
-git clone https://github.com/ohuelab/QEPPI.git
-cd QEPPI
-python calc_QEPPI.py --csv PATH_TO_YOUR_COMPOUND.csv --out PATH_TO_OUTPUT.csv
-```
-
-## Instalation using pip install
-You can install it with ```pip install QEPPI```.
-First, you need to install with the dependencies.
-The following sample code is available as an implementation example.
 
 ```bash
 # dependencies
@@ -62,6 +27,39 @@ pip install rdkit-pypi
 pip install numpy
 pip install pandas
 ```
+
+We also confirmed that QEPPI works with Colab. (see [notebook](https://github.com/ohuelab/QEPPI/blob/main/notebook/QEPPI.ipynb))
+
+### Clone QEPPI
+Clone QEPPI repository when you are done with the setup.
+
+```bash
+git clone https://github.com/ohuelab/QEPPI.git
+```
+
+### Test
+Test it after git clone the QEPPI repository.  
+If the test passes, the QEPPI calculation has been successfully performed.  
+(We used pytest version is 6.2.2)  
+```bash
+cd QEPPI
+pytest -v
+```
+
+## QEPPI calculation example
+```bash
+# for .sdf
+python calc_QEPPI.py --sdf PATH_TO_YOUR_COMPOUND.sdf --out PATH_TO_OUTPUT.csv
+```
+```bash
+# for .csv ("A column name of "SMILES" is required.")
+python calc_QEPPI.py --csv PATH_TO_YOUR_COMPOUND.csv --out PATH_TO_OUTPUT.csv
+```
+
+## Instalation using pip install
+You can install it with ```pip install QEPPI```.  
+First, you need to install with the dependencies (see [Mininal environment setup](https://github.com/ohuelab/QEPPI#mininal-environment-setup)).  
+The following sample code is available as an implementation example.  
 
 ```bash
 # QEPPI
