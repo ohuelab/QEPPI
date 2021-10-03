@@ -39,3 +39,6 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 junit/
+
+# Makefile
+Makefile

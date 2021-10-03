@@ -24,9 +24,9 @@ We setup it on a Mac (macOS10.15.7), but I'm sure it will run fine on other plat
 ```bash
 # Python 3.7 | 3.8
 # dependencies
-pip install rdkit-pypi
-pip install numpy
-pip install pandas
+pip install rdkit-pypi # >= 2021.3.1.5
+pip install numpy      # >= 1.19.5
+pip install pandas     # >= 1.1.5
 ```
 
 We also confirmed that QEPPI works with Colab. (see [notebook](https://github.com/ohuelab/QEPPI/blob/main/notebook/QEPPI.ipynb))

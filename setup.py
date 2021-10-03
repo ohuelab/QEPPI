@@ -19,7 +19,7 @@ setup(
     license="MIT",
     packages=["QEPPI"],
     install_requires=[
-        "rdkit-pypi>=2020.9.5.2",
+        "rdkit-pypi>=2021.3.1.5",
         "numpy>=1.19.5",
         "pandas>=1.1.5",
     ],
