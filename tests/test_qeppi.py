@@ -1,7 +1,9 @@
 import pytest
-import qeppi as ppi
+import QEPPI as ppi
 from rdkit.Chem import SDMolSupplier
 
+def test_version():
+    assert ppi.__version__
 
 def test_qeppi_value_approx():
     correct_values = [
