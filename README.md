@@ -37,7 +37,7 @@ If the test passes, the QEPPI calculation has been successfully performed.
 pytest -v
 ```
 
-## QEPPI calculation example(git clone)
+## QEPPI calculation example (git clone)
 ```bash
 # for .sdf
 git clone https://github.com/ohuelab/QEPPI.git
