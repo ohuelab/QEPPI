@@ -8,6 +8,8 @@ Quantitative Estimate Index for Compounds Targeting Protein-Protein Interactions
 [![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
 [![GitHub Clones](https://img.shields.io/badge/dynamic/json?style=flat-square?color=success&label=Clones_in_14days&query=count&url=https://github.com/ohuelab/QEPPI/blob/main/clone.json?raw=True&logo=github)](https://github.com/ohuelab/QEPPI/)
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fohuelab%2FQEPPI&count_bg=%238EC9EE&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Hits&edge_flat=true)](https://hits.seeyoufarm.com/)
+[![tests](https://github.com/ohuelab/QEPPI/actions/workflows/tests.yml/badge.svg)](https://github.com/ohuelab/QEPPI)
+[![PyPI version](https://badge.fury.io/py/QEPPI.svg)](https://badge.fury.io/py/QEPPI)
 
 
 ## Calculation QEPPI with using Google Colab
@@ -20,40 +22,67 @@ If you have a lot of SMILES to calculate, please convert the SMILES to SDF files
 We setup it on a Mac (macOS10.15.7), but I'm sure it will run fine on other platforms such as Linux.  
 
 ```
-miniconda3-4.3.30
-Python 3.7.9
-rdkit=2020.09.1.0
-numpy=1.20.1
-pandas=1.2.3
+Python>=3.7.9 <=3.8
+rdkit-pypi>=2021.3.1.5
+numpy>=1.19.5
+pandas>=1.1.5
 ```
-We also confirmed that QEPPI works with the installation of RDKit by ```pip install rdkit-pypi``` instead of the conda environment. (see [notebook](https://github.com/ohuelab/QEPPI/blob/main/notebook/QEPPI.ipynb))
+We also confirmed that QEPPI works with Colab. (see [notebook](https://github.com/ohuelab/QEPPI/blob/main/notebook/QEPPI.ipynb))
 
 ## Test
 Test it when you are done with the setup.
 If the test passes, the QEPPI calculation has been successfully performed.
 (We used pytest version is 6.2.2)
-```
+```bash
 pytest -v
 ```
 
-## QEPPI Calculaton example
-```
+## QEPPI calculation example(git clone)
+```bash
 # for .sdf
+git clone https://github.com/ohuelab/QEPPI.git
+cd QEPPI
 python calc_QEPPI.py --sdf PATH_TO_YOUR_COMPOUND.sdf --out PATH_TO_OUTPUT.csv
 ```
-```
+```bash
 # for .csv ("A column name of "SMILES" is required.")
+git clone https://github.com/ohuelab/QEPPI.git
+cd QEPPI
 python calc_QEPPI.py --csv PATH_TO_YOUR_COMPOUND.csv --out PATH_TO_OUTPUT.csv
 ```
-If you want to implement your own, the following is a sample code.
 
+## Instalation using pip install
+You can install it with ```pip install QEPPI```.
+First, you need to install with the dependencies.
+The following sample code is available as an implementation example.
+
+```bash
+# dependencies
+pip install rdkit-pypi
+pip install numpy
+pip install pandas
 ```
-import qeppi as ppi
+
+```bash
+# QEPPI
+pip install QEPPI
+```
+
+```python
+import QEPPI as ppi
+from rdkit import Chem
 from rdkit.Chem import SDMolSupplier
 
 q = ppi.QEPPI_Calculator()
-q.load("./model/QEPPI.model")
+q.read()
 
+# SMILES
+smiles = "COC1=CC(=CC=C1NC(=O)[C@@H]1N[C@@H](CC(C)(C)C)[C@@](C#N)([C@H]1C1=CC=CC(Cl)=C1F)C1=CC=C(Cl)C=C1F)C(O)=O"
+mol = Chem.MolFromSmiles(smiles)
+print(q.qeppi(mol))
+# 0.7862842663145835
+
+# SDF
 ppi_s = SDMolSupplier("PATH_TO_SDF/YOUR_COMPOUND.sdf")
 ppi_mols = [mol for mol in ppi_s if mol is not None]
 result = list(map(q.qeppi, ppi_mols))
