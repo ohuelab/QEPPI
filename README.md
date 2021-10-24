@@ -88,5 +88,8 @@ If you find QEPPI useful, please consider citing this publication;
 - Kosugi T, Ohue M. [**Quantitative estimate index for early-stage screening of compounds targeting protein-protein interactions**](https://www.mdpi.com/1422-0067/22/20/10925). _International Journal of Molecular Sciences_, 22(20): 10925, 2021. doi: 10.3390/ijms222010925 
 
 Another QEPPI publication (conference paper)
-- Kosugi T, Ohue M. **Quantitative estimate of protein-protein interaction targeting drug-likeness**. In _Proceedings of The 18th IEEE International Conference on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB 2021)_. (in press)
+
+- T. Kosugi and M. Ohue, **Quantitative Estimate of Protein-Protein Interaction Targeting Drug-likeness**, _2021 IEEE Conference on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB)_, **2021**, pp. 1-8, doi: 10.1109/CIBCB49929.2021.9562931.
+
+- Kosugi T, Ohue M. **Quantitative estimate of protein-protein interaction targeting drug-likeness**. In _Proceedings of The 18th IEEE International Conference on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB 2021)_.
 ChemRxiv, Preprint. 2021. [doi:10.33774/chemrxiv-2021-psqq4-v2](https://doi.org/10.33774/chemrxiv-2021-psqq4-v2)
