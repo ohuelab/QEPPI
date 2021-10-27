@@ -3,7 +3,7 @@
 </p>
 
 # QEPPI
-Quantitative Estimate Index for Compounds Targeting Protein-Protein Interactions
+**Quantitative estimate index for early-stage screening of compounds targeting protein-protein interactions**
 
 [![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
 [![GitHub Clones](https://img.shields.io/badge/dynamic/json?style=flat-square?color=success&label=Clones_in_14days&query=count&url=https://github.com/ohuelab/QEPPI/blob/main/clone.json?raw=True&logo=github)](https://github.com/ohuelab/QEPPI/)
